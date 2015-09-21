@@ -1,0 +1,33 @@
+{
+  "name": "arr-xor",
+  "version": "1.0.0",
+  "description": "Generic array xor. Supports predicate equals function.",
+  "main": "src/index.js",
+  "keywords": [
+    "array",
+    "xor",
+    "predicate"
+  ],
+  "author": "Kimmo Brunfeldt",
+  "license": "MIT",
+  "dependencies": {
+    "lodash.every": "^3.2.3",
+    "lodash.findindex": "^3.2.1",
+    "lodash.isfunction": "^3.0.6",
+    "lodash.last": "^3.0.0",
+    "lodash.map": "^3.1.4",
+    "lodash.reduce": "^3.1.2",
+    "lodash.sum": "^3.6.2"
+  },
+  "devDependencies": {
+    "eslint": "^1.5.0",
+    "jscs": "^2.1.1",
+    "mocha": "^2.3.3"
+  },
+  "scripts": {
+    "ci": "./tools/ci.sh",
+    "test": "mocha",
+    "eslint": "eslint --ext .js ./src ./test",
+    "jscs": "jscs ./src ./test"
+  }
+}
