@@ -17,4 +17,15 @@ describe('arr-xor', function() {
         });
         assert.deepStrictEqual(result, [{id: 1}, {id: 3}]);
     });
+
+    it('more complex predicate', function() {
+        var first = [{id: 1, text: 'one'}, {id: 2, text: 'two'}];
+        var second = [{id: 2, text: 'another'}, {id: 3, text: 'three'}];
+        var result = xor(first, second, function(a, b) {
+            return a.id === b.id;
+        });
+
+        var expected = [{id: 1, text: 'one'}, {id: 3, text: 'three'}];
+        assert.deepStrictEqual(result, expected);
+    });
 });
