@@ -3,7 +3,6 @@ var _ = {
     last: require('lodash.last'),
     reduce: require('lodash.reduce'),
     findIndex: require('lodash.findindex'),
-    all: require('lodash.every'),
     map: require('lodash.map'),
     sum: require('lodash.sum')
 };
